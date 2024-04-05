@@ -1,5 +1,5 @@
 resource "docker_image" "todo_image" {
-	name = "trainwithshubham/todo-app-node:latest"
+	name = "*****"
 	keep_locally = false
 }
 
