@@ -1,4 +1,4 @@
-# End to End DevSecOps Project for DevOps Engineers
+# Created CI/CD pipeline for Nodejs web application, using docker, jenkins, AWS EC2 & webhooks
 
 ### In this project, we will learn about  DevOps and DevSecOps tools in one project:
 
