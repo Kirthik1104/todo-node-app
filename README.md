@@ -25,6 +25,10 @@
 
 #
 ## Steps for Jenkins CI/CD:
+1)  Access Jenkins UI and setup Jenkins
+![alt text](https://github.com/Kirthik1104/todo-node-app/blob/main/images/new_image_1.png)
+
+
 
 Run these commands:
 
