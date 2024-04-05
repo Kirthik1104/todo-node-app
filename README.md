@@ -7,27 +7,24 @@
 -  Git and GitHub
 -  Docker
 -  Docker-compose
--  Jenkins CI/CD
--  SonarQube
--  OWASP
--  Trivy 
-
+-  Jenkins CI/CD using web hooks
 #
 
 ## Pre-requisites to implement this project:
 
--  AWS EC2 instance (Ubuntu) with instance type t2.large and root volume 29GB.
+-  AWS EC2 instance (Ubuntu) with instance type t2.large or micro and root volume 29GB.
 
 -  Jenkins installed <br>
     - Reference: <b><a href="https://www.jenkins.io/doc/book/installing/linux/#long-term-support-release"><u> Jenkins installation </a></u></b>
 
--  Docker and docker-compose installled
+-  Docker installled
 ```bash
     sudo apt-get update
-    sudo apt-get install docker.io -y
-    sudo apt-get install docker-compose -y
+    sudo apt-get install docker.io
+```
 
-# node-todo-cicd
+#
+## Steps for Jenkins CI/CD:
 
 Run these commands:
 
