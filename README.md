@@ -28,9 +28,33 @@
 1)  Access Jenkins UI and setup Jenkins
 ![alt text](https://github.com/Kirthik1104/todo-node-app/blob/main/images/new_image_1.png)
 
+2) Enabled handshake between jenkins and github and generating ssh key-gen
+   - Associating private key with jenkins
+   - Associaating public key with github
 
+   **Note when you build the application in jenkins, it pulls your repo and and creates a dumps in jenkins. Check below image**
+   ![alt text](https://github.com/Kirthik1104/todo-node-app/blob/main/images/new_image_7.png)
 
-Run these commands:
+   Add jenkins as a user inside docker group to allow jenkins to interact, build and run docker containers.
+   ```bash
+     sudo -a -G docker jenkins
+   ```
+   
+#
+## Ways to run your application:
+
+1) Using docker
+```bash
+ sudo docker build . -t <image-name>
+ sudo docker run -d -p 8000:8000 <image-name (same as above)>
+```
+Note you can access the application using host ip:host port
+
+2) Using build steps in jenkins
+```bash
+run the above commands as build steps, so that you can run the application directly from jenkins build and not having to run the docker build and run manually. Check the below image
+```
+![alt text](https://github.com/Kirthik1104/todo-node-app/blob/main/images/new_image_4.png)
 
 
 `sudo apt install nodejs`
