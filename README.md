@@ -56,18 +56,14 @@ run the above commands as build steps, so that you can run the application direc
 ```
 ![alt text](https://github.com/Kirthik1104/todo-node-app/blob/main/images/new_image_4.png)
 
+3) Finally!! --> **Automate the CI/CD pipeline** and deploy the web application using webhooks, **orchestrating docker build and run using commit trigger in jenkins**. Check the below imaage for integration
+![alt text](https://github.com/Kirthik1104/todo-node-app/blob/main/images/new_image_5.png)
+Adding the jenkins-url followed by /github-webhook/
+![alt text](https://github.com/Kirthik1104/todo-node-app/blob/main/images/new_image_3.png)
+Enabling build trigger which will then trigger build steps on code commit to start the automatic CI/CD pipeline.
 
-`sudo apt install nodejs`
+-Now make update to the js file and commit the changes and see the magic happen!
+![alt text](https://github.com/Kirthik1104/todo-node-app/blob/main/images/new_image_8.png)
+![alt text](https://github.com/Kirthik1104/todo-node-app/blob/main/images/new_image_9.png)
 
-
-`sudo apt install npm`
-
-
-`npm install`
-
-`node app.js`
-
-or Run by docker compose
-
-test
-
+nodejs todo application
